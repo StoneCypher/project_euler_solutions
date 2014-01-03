@@ -30,4 +30,4 @@ To let people compare solutions.  Sometimes you can learn a lot from a tricky wa
 Polemic :neckbeard:
 -------------------
 
-`htstub` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
+`project_euler_solutions` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
