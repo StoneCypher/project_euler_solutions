@@ -155,3 +155,46 @@ p3factorize(N, Current, Work, Cap) ->
             end
 
     end.
+
+
+
+
+
+%% @doc A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+%%
+%% Find the largest palindrome made from the product of two 3-digit numbers.
+%%
+%% <hr>
+%%
+%% So, generate the entire list of numbers 100..999 * 100..999, filter to remove those
+%% which aren't palindromes, sort, reverse, head.  Cool.
+%%
+%% ```p4() ->
+%% 
+%%     head(lists:reverse(lists:sort(
+%%        [ X*Y || X <- lists:seq(100,999), Y <- lists:seq(100,999), p4_is_palindrome(X*Y) ]
+%%     ))).'''
+%%
+%% A number is a palindrome if, when converted to a string, its string is the same as
+%% its string reversed.
+%%
+%% ```p4_is_palindrome(X) ->
+%% 
+%%     Str = integer_to_list(X),
+%%     Str == lists:reverse(Str).'''
+
+
+p4() ->
+
+    head(lists:reverse(lists:sort(
+       [ X*Y || X <- lists:seq(100,999), Y <- lists:seq(100,999), p4_is_palindrome(X*Y) ]
+    ))).
+
+
+
+
+
+p4_is_palindrome(X) ->
+
+    Str = integer_to_list(X),
+    Str == lists:reverse(Str).
